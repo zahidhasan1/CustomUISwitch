@@ -9,21 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var viewCustomSwitch: CustomSwitch!
+    @IBOutlet weak var viewCustomSwitch: LabelSwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewCustomSwitch.areLabelsShown = true
-        viewCustomSwitch.addTarget(self, action: #selector(switchValueChanged), for: .valueChanged)
-        // Do any additional setup after loading the view.
+        viewCustomSwitch.fullSizeTapEnabled = true
+//        viewCustomSwitch.areLabelsShown = true
+//        viewCustomSwitch.addTarget(self, action: #selector(switchValueChanged), for: .valueChanged)
+//        // Do any additional setup after loading the view.
     }
 
-    @objc func switchValueChanged(_ customSwitch: CustomSwitch){
-        if customSwitch.isOn{
-            print("Custom Switch is on")
-        }else{
-            print("Custom Switch is off")
-        }
-    }
+//    @objc func switchValueChanged(_ customSwitch: CustomSwitch){
+//        if customSwitch.isOn{
+//            print("Custom Switch is on")
+//        }else{
+//            print("Custom Switch is off")
+//        }
+//    }
 
 }
 

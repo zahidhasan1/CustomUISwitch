@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C009C8552A693F6F00C7CF8F /* LabelSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009C8522A693F5500C7CF8F /* LabelSwitch.swift */; };
+		C009C8562A693F7400C7CF8F /* LabelSwitchBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009C8532A693F5500C7CF8F /* LabelSwitchBackView.swift */; };
+		C009C8572A693F7800C7CF8F /* LabelSwitchConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009C8542A693F5500C7CF8F /* LabelSwitchConfig.swift */; };
+		C009C8582A693F7A00C7CF8F /* LabelSwitchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009C8512A693F5500C7CF8F /* LabelSwitchState.swift */; };
 		C011385F2A68FD8400F604D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011385E2A68FD8400F604D0 /* AppDelegate.swift */; };
 		C01138612A68FD8400F604D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01138602A68FD8400F604D0 /* SceneDelegate.swift */; };
 		C01138632A68FD8400F604D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01138622A68FD8400F604D0 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C009C8512A693F5500C7CF8F /* LabelSwitchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSwitchState.swift; sourceTree = "<group>"; };
+		C009C8522A693F5500C7CF8F /* LabelSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSwitch.swift; sourceTree = "<group>"; };
+		C009C8532A693F5500C7CF8F /* LabelSwitchBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSwitchBackView.swift; sourceTree = "<group>"; };
+		C009C8542A693F5500C7CF8F /* LabelSwitchConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSwitchConfig.swift; sourceTree = "<group>"; };
 		C011385B2A68FD8400F604D0 /* CustomUISwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUISwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C011385E2A68FD8400F604D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C01138602A68FD8400F604D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C009C8502A693F3900C7CF8F /* CustomUISwitchWithLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C009C8522A693F5500C7CF8F /* LabelSwitch.swift */,
+				C009C8532A693F5500C7CF8F /* LabelSwitchBackView.swift */,
+				C009C8542A693F5500C7CF8F /* LabelSwitchConfig.swift */,
+				C009C8512A693F5500C7CF8F /* LabelSwitchState.swift */,
+			);
+			path = CustomUISwitchWithLabel;
+			sourceTree = "<group>";
+		};
 		C01138522A68FD8400F604D0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +79,7 @@
 		C011385D2A68FD8400F604D0 /* CustomUISwitch */ = {
 			isa = PBXGroup;
 			children = (
+				C009C8502A693F3900C7CF8F /* CustomUISwitchWithLabel */,
 				C01138722A68FD9C00F604D0 /* CustomSwitch */,
 				C011385E2A68FD8400F604D0 /* AppDelegate.swift */,
 				C01138602A68FD8400F604D0 /* SceneDelegate.swift */,
@@ -153,10 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0726A792A6917A700B55A6A /* CustomThumbView.swift in Sources */,
+				C009C8562A693F7400C7CF8F /* LabelSwitchBackView.swift in Sources */,
+				C009C8572A693F7800C7CF8F /* LabelSwitchConfig.swift in Sources */,
 				C01138632A68FD8400F604D0 /* ViewController.swift in Sources */,
+				C009C8552A693F6F00C7CF8F /* LabelSwitch.swift in Sources */,
 				C011385F2A68FD8400F604D0 /* AppDelegate.swift in Sources */,
 				C01138742A68FDB000F604D0 /* CustomSwitch.swift in Sources */,
 				C01138612A68FD8400F604D0 /* SceneDelegate.swift in Sources */,
+				C009C8582A693F7A00C7CF8F /* LabelSwitchState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

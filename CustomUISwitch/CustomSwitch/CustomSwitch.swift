@@ -7,6 +7,10 @@
 
 import UIKit
 
+
+
+
+
 @IBDesignable
 class CustomSwitch: UIControl{
     
@@ -222,10 +226,52 @@ class CustomSwitch: UIControl{
         //self.thumbView.thumbImageView.image = thumbImage
         self.addSubview(self.thumbView)
     }
-    
+}
 
-    
 
+private class LabelSwitchPart {
+    let label: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.numberOfLines = 1
+        label.backgroundColor = .clear
+        return label
+    }()
     
+    let back: LabelSwitchBackView = {
+        let view = LabelSwitchBackView()
+        return view
+    }()
     
+    lazy var mask: CALayer = {
+        let layer = CALayer()
+        layer.backgroundColor = UIColor.black.cgColor
+        label.layer.mask = layer
+        return layer
+    }()
+    
+    func setConfig(_ config: LabelSwitchConfig) {
+        back.backgroundColor = config.backgroundColor
+        label.textColor = config.textColor
+        label.text = config.text
+        label.font = config.font
+        label.sizeToFit()
+        
+        if let gradient = config.backGradient {
+            back.gradientLayer.colors = gradient.colors
+            back.gradientLayer.startPoint = gradient.startPoint
+            back.gradientLayer.endPoint = gradient.endPoint
+            back.gradientLayer.isHidden = false
+        }
+        
+        if let image = config.backImage {
+            back.imageView.image = image
+            back.imageView.isHidden = false
+        }
+    }
+    
+    func setState(_ state: LabelSwitchPartState) {
+        mask.frame = state.backMaskFrame
+        back.frame = state.backMaskFrame
+    }
 }
